@@ -46,6 +46,7 @@ app.get('/', routes.index);
 app.get('/tasks', routes.tasks);
 app.get('/task/take/:task_id', routes.take);
 app.get('/task/complete/:task_id', routes.complete);
+app.get('/task/cancel/:task_id', routes.cancel);
 app.get('/leaderboard', routes.leaderboard);
 app.get('/logout', routes.logout);
 app.post('/auth', routes.auth(AUDIENCE));
